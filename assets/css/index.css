@@ -1,0 +1,162 @@
+
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, sans-serif;
+    }
+    /* Full Page Layout */
+    body, html {
+        height: 100%;
+        width: 100%;
+        background: #f0f4f8;
+        background-image: url("../pics/library-5641389_1280.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    /* #logo{
+        
+            width: 100px; 
+            height: 75px; 
+            object-fit: contain; 
+    
+          
+    } 
+    */
+    
+    .navbar {
+        background-color: #2c3e50;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 20px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    .navbar-brand {
+        color: #ecf0f1;
+        text-decoration: none;
+        font-size: 24px;
+        display: flex;
+        align-items: center;
+    }
+    .nav-links {
+        list-style: none;
+        display: flex;
+    }
+    .nav-link {
+        padding: 10px 15px;
+        color: #ecf0f1;
+        text-decoration: none;
+        border-radius: 5px;
+        margin-left: 10px;
+        font-size: 18px;
+        transition: background-color 0.3s;
+    }
+    .nav-link:hover {
+        background-color: #34495e;
+    }
+    /* Flexbox Layout for Full Page */
+    .container {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+        padding: 20px;
+    }
+    /* Title */
+    h2 {
+        color: #2c3e50;
+        font-size: 36px;
+        font-weight: 600;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    /* Login Page Styling */
+    .login-page, .library-info {
+        width: 100%;
+        max-width: 500px;
+        padding: 30px;
+        background-color: #fff;
+        border-radius: 12px;
+        box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+    }
+    .login-page h2, .library-info h2 {
+        color: green;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    /* Login Form Fields */
+    .login-page label {
+        margin-bottom: 10px;
+        font-size: 18px;
+        color: #2c3e50;
+    }
+    .login-page input[type="text"], .login-page input[type="password"] {
+        padding: 12px;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        margin-bottom: 20px;
+        font-size: 16px;
+        width: 100%;
+    }
+    .login-page button[type="submit"] {
+        background-color: #3498db;
+        color: white;
+        padding: 12px 30px;
+        font-size: 18px;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        transition: background-color 0.3s, transform 0.3s;
+        width: 100%;
+    }
+    .login-page button[type="submit"]:hover {
+        background-color: #2980b9;
+        transform: translateY(-2px);
+    }
+    #error{
+        color: red; 
+        text-align: center; 
+        margin: 5px;
+    }
+    .register-message {
+        text-align: center;
+        margin-top: 15px;
+    }
+    .register-message a {
+        padding: 7px;
+        background-color: darkgreen;
+        text-decoration: none;
+        color: white;
+        font-weight: bold;
+        border-radius: 5px;
+    }
+    /* Library Information Panel */
+    .library-info p {
+        margin-bottom: 10px;
+    }
+    /* Footer */
+    footer {
+        background-color: #2c3e50;
+        color: #fff;
+        padding: 12px;
+        text-align: center;
+        margin-top: 30px;
+    }
+        /* Responsive Design */
+     @media (max-width: 768px) {
+            .container {
+                gap: 1rem;
+            }
+
+            .login-page, .library-info {
+                width: 90%;
+                max-width: 100%;
+            }
+
+            h2 {
+                font-size: 28px;
+            }
+        }
